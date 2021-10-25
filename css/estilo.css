@@ -1,4 +1,6 @@
-/*Pagina completa*/
+/*******************/
+/* Pagina completa */
+/*******************/
 html{
     scroll-behavior: smooth;
     background: rgba(53,58,64,1);
@@ -6,28 +8,29 @@ html{
 :root{
     --colorLyrics:rgba(53,58,64,1);
     --linksColor: rgba(149, 147, 145,1);
-    --green:rgba(36,150,60,1);
+    --mi_verde: rgb(40, 165, 70);
     --softgreen:rgba(150,201,62,255);
     --lightgrey:gray;
     --blue:rgba(204,229,255,255);
 }
-
+.texto-grande{    
+    font-weight: bolder;
+    text-align: center;
+    font-size: 2vw;
+}
 .texto-pequenio{
     text-align: center;
     font-size: 1vw;
-}
-.texto-grande{
-    text-align: center;
-    font-size: 2vw;
 }
 .texto-diminuto{
     font-size: 0.8vw;    
     font-weight:lighter;
 }
 
-
-/*SECCION NAVBAR*/
-.navbar{
+/******************/
+/* SECCION NAVBAR */
+/******************/
+.navbar{    
     background-color: #e3f2fd;
 }
 .brand-logo{
@@ -39,17 +42,18 @@ html{
     align-items: center;
     text-align: center;
     color: white;
-    font-size: 1.75vw;
+    font-size: 1.5vw;
 }
 .mi_navbar{
     display: flex;
-    flex-flow: row;
+    flex-flow: row;    
+    flex-flow: nowrap;
     justify-content: space-evenly;
     align-content: center;
     align-items: center;
     text-align: center;
     color: white;
-    font-size: 1.5vw;
+    font-size: 1.3vw;
 }
 .nav-link{
     color:rgba(149, 147, 145,1);
@@ -65,28 +69,32 @@ html{
     width: 95%;
 }
 .nav-link-verde{
-    color: #198754;
+    color: rgb(40, 165, 70);
     text-decoration: none;
     flex-direction: column;
     padding-right: 2rem ;
     width: 90%;
 }
 
-
-/*SECCION CONF BS AS*/
-.card-img.conf_bs_as{
-    opacity: 35%;
+/**********************/
+/* SECCION CONF BS AS */
+/**********************/
+.carousel-inner{    
+    background: black;
+    background-color: black;
+}
+.carousel-img {    
+    opacity: 35%;    
 }
 .card-title.conf_bs_as{
     color: white;
     text-align: right;
-    font-size: 2.7vw;
+    font-size: 150%;
     font-weight: bolder;
 }
-.card-img-overlay{
+.card-img-overlay.conf_bs_as{
     color: white;
     text-align: right;
-    font-size: 1.5vw;
     flex-flow: column wrap;
     margin-right: 8vh;
     position: absolute;
@@ -94,31 +102,18 @@ html{
     bottom: 15%;
     left: 30%;
 }
-
-/*.card-text{
-    color: white;
-    text-align: right;
-    font-size: 1.7vw;
-    flex-flow: column wrap;
-    margin-right: 8vh;
-    position: absolute;
-    top: 30%;
-    bottom: 15%;
-    left: 30%;
-}
-*/
 .btn.quiero_orador{
     color:white;
     outline: white;
 }
-
 .btn.comprar_tickets{
     color:white;
     background: #198754;
 }
 
-
-/*SECCION ORADORES*/
+/********************/
+/* SECCION ORADORES */
+/********************/
 .card-img-top{
     width: 100%;
     border-radius: .3rem .3rem 0 0;
@@ -130,21 +125,50 @@ html{
     font-weight: bolder;
 }
 
-
-/*SECCION BS AS OCTUBRE*/
-.card-body.bs-as-octubre{
+/*************************/
+/* SECCION BS AS OCTUBRE */
+/*************************/
+div.bs-as-octubre{
+    background-color: rgba(53,58,64,1);
+    color: white;
+}
+h5.bs-as-octubre{
+    background-color: rgba(53,58,64,1);
+    color: white;
+}
+p.bs-as-octubre{
     background-color: rgba(53,58,64,1);
     color: white;
 }
 
 
-/*SECCION FORMULARIO*/
+/****************************/
+/* SECCION CONVIERTE ORADOR */
+/****************************/
 .btn.enviar-form{
+    
     color:white;
-    background: #198754;
+    background: rgb(150, 200, 60);    
+    outline: rgb(170, 200, 120);
 }
 
-/*FOOTER*/
+/***************************/
+/* SECCION COMPRAR TICKETS */
+/***************************/
+.btn.lima{
+    color:white;
+    background: rgb(150, 200, 60);    
+    outline: rgb(170, 200, 120);
+}
+.total_a_pagar{    
+    color:black;
+    background: rgb(205, 230, 255);    
+    outline: rgb(185, 220, 255);
+}
+
+/**********/
+/* FOOTER */
+/**********/
 .footer{
     display: flex;
     flex-direction: row;
@@ -163,7 +187,7 @@ html{
 
 
     background: rgb(9,9,121);
-    background: linear-gradient(90deg, rgba(27,55,67,1) 0%, rgba(31,82,113,1) 100%);
+    background: linear-gradient(90deg, rgb(23, 46, 56) 0%, rgb(28, 80, 112) 100%);
 }
 
 .foot{
